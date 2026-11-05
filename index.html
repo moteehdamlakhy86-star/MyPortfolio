@@ -27,8 +27,6 @@
     .project img{width:100%;height:250px;object-fit:cover;border-bottom:1px solid var(--line);background:#1a2638;display:block}
     .project-body{padding:18px}.project-body p{color:var(--muted);font-size:14px}
     .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.step{border-right:3px solid var(--cyan);padding:4px 15px}
-    
-    /* تنسيق قسم آراء العملاء */
     .testimonials{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
     .testimonial-card{background:linear-gradient(145deg,#1b3150,#111b2d);border:1px solid var(--line);border-radius:18px;padding:24px;position:relative;transition:transform 0.3s ease;}
     .testimonial-card:hover{transform:translateY(-5px);border-color:var(--cyan);}
@@ -38,43 +36,19 @@
     .client-avatar{width:45px;height:45px;border-radius:50%;background:var(--blue);color:#071326;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:18px;}
     .client-details h4{margin:0;font-size:16px;color:var(--text);}
     .client-details p{margin:0;font-size:12px;color:var(--muted);}
-
-    /* تنسيق نموذج التواصل */
     .contact-form{background:linear-gradient(135deg,#16375c,#142238);border:1px solid var(--line);border-radius:24px;padding:40px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
-    .contact-form h2{margin-top:0;color:var(--cyan)}
-    .contact-form p{color:var(--muted);margin-bottom:20px}
-    .form-group{margin-bottom:15px}
-    .form-group label{display:block;margin-bottom:5px;font-size:14px;color:var(--text)}
+    .contact-form h2{margin-top:0;color:var(--cyan)}.contact-form p{color:var(--muted);margin-bottom:20px}
+    .form-group{margin-bottom:15px}.form-group label{display:block;margin-bottom:5px;font-size:14px;color:var(--text)}
     .form-group input, .form-group textarea{width:100%;padding:12px;border-radius:8px;border:1px solid var(--line);background:rgba(0,0,0,0.2);color:var(--text);font-family:inherit}
     .form-group input:focus, .form-group textarea:focus{outline:none;border-color:var(--cyan)}
-    .form-group textarea{resize:vertical;height:120px}
-    .contact-form .btn{margin-top:10px;width:100%;font-size:16px}
+    .form-group textarea{resize:vertical;height:120px}.contact-form .btn{margin-top:10px;width:100%;font-size:16px}
     .contact-info{display:flex;flex-direction:column;justify-content:center;background:rgba(0,0,0,0.1);padding:30px;border-radius:16px}
-    .contact-info h3{color:var(--text);margin-top:0}
-    .contact-info a{display:flex;align-items:center;gap:10px;margin-bottom:15px;font-size:16px}
-    .contact-info a:hover{color:var(--cyan)}
-
+    .contact-info h3{color:var(--text);margin-top:0}.contact-info a{display:flex;align-items:center;gap:10px;margin-bottom:15px;font-size:16px}.contact-info a:hover{color:var(--cyan)}
     #successMessage {display: none;background: rgba(98, 224, 208, 0.1);border: 1px solid var(--cyan);color: var(--cyan);padding: 20px;border-radius: 12px;margin-top: 20px;text-align: center;font-weight: bold;}
-
     footer{padding:30px 0;color:var(--muted);font-size:13px;border-top:1px solid var(--line);margin-top:50px}
-    .ltr { direction: ltr; text-align: left; }
-    .ltr .step { border-right: 0; border-left: 3px solid var(--cyan); padding: 4px 15px; }
-
-    @media(max-width:900px){
-      .hero{grid-template-columns:1fr;padding-top:55px;gap:20px;text-align:center;}
-      .hero .actions{justify-content:center;}
-      .hero-card{margin:0 auto;max-width:400px;width:100%;}
-      .navlinks{display:none;}
-      .cards,.projects,.steps,.contact-form,.testimonials{grid-template-columns:1fr 1fr;}
-      .section-head{text-align:center;}
-    }
-    @media(max-width:600px){
-      .cards,.projects,.steps,.contact-form,.testimonials{grid-template-columns:1fr;}
-      .hero h1{font-size:32px;}
-      .contact-info{padding:20px;}
-      .contact-form{padding:20px;}
-      .project img{height:200px;}
-    }
+    .ltr { direction: ltr; text-align: left; }.ltr .step { border-right: 0; border-left: 3px solid var(--cyan); padding: 4px 15px; }
+    @media(max-width:900px){.hero{grid-template-columns:1fr;padding-top:55px;gap:20px;text-align:center;}.hero .actions{justify-content:center;}.hero-card{margin:0 auto;max-width:400px;width:100%;}.navlinks{display:none;}.cards,.projects,.steps,.contact-form,.testimonials{grid-template-columns:1fr 1fr;}.section-head{text-align:center;}}
+    @media(max-width:600px){.cards,.projects,.steps,.contact-form,.testimonials{grid-template-columns:1fr;}.hero h1{font-size:32px;}.contact-info{padding:20px;}.contact-form{padding:20px;}.project img{height:200px;}}
   </style>
 </head>
 <body>
@@ -115,24 +89,9 @@
 <section class="wrap" id="services">
   <div class="section-head"><h2><span data-lang="ar">الخدمات</span><span data-lang="tr">Hizmetler</span></h2><p><span data-lang="ar">حلول برمجية حسب متطلبات مشروعك.</span><span data-lang="tr">Projenizin ihtiyaçlarına göre yazılım çözümleri.</span></p></div>
   <div class="cards">
-    <article class="card">
-      <div class="icon">📱</div>
-      <h3><span data-lang="ar">تطبيقات الأندرويد</span><span data-lang="tr">Android Uygulamaları</span></h3>
-      <p class="muted"><span data-lang="ar">تطوير تطبيقات Android من الصفر، وتجهيز تجربة استخدام مناسبة للهواتف.</span><span data-lang="tr">Sıfırdan Android uygulamaları ve mobil cihazlara uygun kullanıcı deneyimi.</span></p>
-      <span class="tag">APK</span><span class="tag">Mobile UI</span>
-    </article>
-    <article class="card">
-      <div class="icon">📺</div>
-      <h3><span data-lang="ar">تطبيقات التلفزيون</span><span data-lang="tr">Android TV / TV Box</span></h3>
-      <p class="muted"><span data-lang="ar">تطبيقات للشاشات الكبيرة مع دعم التنقل والتحكم باستخدام الريموت.</span><span data-lang="tr">Büyük ekranlar ve uzaktan kumandayla gezinme için Android TV uygulamaları.</span></p>
-      <span class="tag">Android TV</span><span class="tag">Remote</span>
-    </article>
-    <article class="card">
-      <div class="icon">💻</div>
-      <h3><span data-lang="ar">برامج الكمبيوتر</span><span data-lang="tr">Windows Yazılımları</span></h3>
-      <p class="muted"><span data-lang="ar">تطوير برامج Windows مخصصة وتجهيز حزم تثبيت MSI.</span><span data-lang="tr">İhtiyaca özel Windows yazılımları ve MSI kurulum paketleri.</span></p>
-      <span class="tag">Windows</span><span class="tag">MSI</span>
-    </article>
+    <article class="card"><div class="icon">📱</div><h3><span data-lang="ar">تطبيقات الأندرويد</span><span data-lang="tr">Android Uygulamaları</span></h3><p class="muted"><span data-lang="ar">تطوير تطبيقات Android من الصفر، وتجهيز تجربة استخدام مناسبة للهواتف.</span><span data-lang="tr">Sıfırdan Android uygulamaları ve mobil cihazlara uygun kullanıcı deneyimi.</span></p><span class="tag">APK</span><span class="tag">Mobile UI</span></article>
+    <article class="card"><div class="icon">📺</div><h3><span data-lang="ar">تطبيقات التلفزيون</span><span data-lang="tr">Android TV / TV Box</span></h3><p class="muted"><span data-lang="ar">تطبيقات للشاشات الكبيرة مع دعم التنقل والتحكم باستخدام الريموت.</span><span data-lang="tr">Büyük ekranlar ve uzaktan kumandayla gezinme için Android TV uygulamaları.</span></p><span class="tag">Android TV</span><span class="tag">Remote</span></article>
+    <article class="card"><div class="icon">💻</div><h3><span data-lang="ar">برامج الكمبيوتر</span><span data-lang="tr">Windows Yazılımları</span></h3><p class="muted"><span data-lang="ar">تطوير برامج Windows مخصصة وتجهيز حزم تثبيت MSI.</span><span data-lang="tr">İhtiyaca özel Windows yazılımları ve MSI kurulum paketleri.</span></p><span class="tag">Windows</span><span class="tag">MSI</span></article>
   </div>
 </section>
 
@@ -141,130 +100,54 @@
   <div class="projects">
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/findit.png" alt="FINDIT" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">FINDIT (برنامج بحث)</span><span data-lang="tr">FINDIT (Arama Programı)</span></h3>
-        <p><span data-lang="ar">أداة بحث فائقة السرعة لنظام Windows مع واجهة مظلمة أنيقة وإحصائيات دقيقة.</span><span data-lang="tr">Windows için hızlı arama aracı, karanlık arayüz ve istatistikler.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">FINDIT (برنامج بحث)</span><span data-lang="tr">FINDIT (Arama Programı)</span></h3><p><span data-lang="ar">أداة بحث فائقة السرعة لنظام Windows مع واجهة مظلمة أنيقة وإحصائيات دقيقة.</span><span data-lang="tr">Windows için hızlı arama aracı, karanlık arayüz ve istatistikler.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/tv-prayer.png" alt="TV Prayer App" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">تطبيق الساعة والصلوات (Android TV)</span><span data-lang="tr">Saat ve Namaz Vakitleri (Android TV)</span></h3>
-        <p><span data-lang="ar">واجهة ضخمة للشاشات الذكية تعرض الوقت والتقويم ومواقيت الصلاة.</span><span data-lang="tr">Akıllı ekranlar için saat, takvim ve namaz vakitleri arayüzü.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">تطبيق الساعة والصلوات (Android TV)</span><span data-lang="tr">Saat ve Namaz Vakitleri (Android TV)</span></h3><p><span data-lang="ar">واجهة ضخمة للشاشات الذكية تعرض الوقت والتقويم ومواقيت الصلاة.</span><span data-lang="tr">Akıllı ekranlar için saat, takvim ve namaz vakitleri arayüzü.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/passdrop.png" alt="PassDrop" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">PassDrop (مشاركة آمنة)</span><span data-lang="tr">PassDrop (Güvenli Paylaşım)</span></h3>
-        <p><span data-lang="ar">مشاركة ملفات وملاحظات مشفرة (AES-256) مع خاصية الحذف الذاتي.</span><span data-lang="tr">AES-256 şifreli dosya ve not paylaşımı, kendi kendini imha etme.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">PassDrop (مشاركة آمنة)</span><span data-lang="tr">PassDrop (Güvenli Paylaşım)</span></h3><p><span data-lang="ar">مشاركة ملفات وملاحظات مشفرة (AES-256) مع خاصية الحذف الذاتي.</span><span data-lang="tr">AES-256 şifreli dosya ve not paylaşımı, kendi kendini imha etme.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/black-sea-atlas.png" alt="Black Sea Atlas" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">مرصد البحر الأسود (ذكاء أعمال)</span><span data-lang="tr">Karadeniz Gözlemevi (İş Zekası)</span></h3>
-        <p><span data-lang="ar">لوحة تحكم تفاعلية وتحليل بيانات جغرافية واقتصادية لـ 18 ولاية تركية.</span><span data-lang="tr">18 Türk ili için interaktif kontrol paneli ve coğrafi veri analizi.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">مرصد البحر الأسود (ذكاء أعمال)</span><span data-lang="tr">Karadeniz Gözlemevi (İş Zekası)</span></h3><p><span data-lang="ar">لوحة تحكم تفاعلية وتحليل بيانات جغرافية واقتصادية لـ 18 ولاية تركية.</span><span data-lang="tr">18 Türk ili için interaktif kontrol paneli ve coğrafi veri analizi.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/remote-control.png" alt="Remote Control" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">شاشتي - التحكم عن بعد</span><span data-lang="tr">Ekranım - Uzaktan Kumanda</span></h3>
-        <p><span data-lang="ar">تطبيق تحكم عن بُعد للشاشات عبر الشبكة المحلية (IP/Port).</span><span data-lang="tr">Yerel ağ (IP/Port) üzerinden ekranlar için uzaktan kumanda.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">شاشتي - التحكم عن بعد</span><span data-lang="tr">Ekranım - Uzaktan Kumanda</span></h3><p><span data-lang="ar">تطبيق تحكم عن بُعد للشاشات عبر الشبكة المحلية (IP/Port).</span><span data-lang="tr">Yerel ağ (IP/Port) üzerinden ekranlar için uzaktan kumanda.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/pdf-manager.png" alt="PDF Manager" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">مدير طباعة PDF</span><span data-lang="tr">PDF Yazdırma Yöneticisi</span></h3>
-        <p><span data-lang="ar">تطبيق لفتح وتصفح وإدارة ملفات PDF استعداداً لطباعتها.</span><span data-lang="tr">PDF dosyalarını açmak, görüntülemek ve yazdırmak için uygulama.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">مدير طباعة PDF</span><span data-lang="tr">PDF Yazdırma Yöneticisi</span></h3><p><span data-lang="ar">تطبيق لفتح وتصفح وإدارة ملفات PDF استعداداً لطباعتها.</span><span data-lang="tr">PDF dosyalarını açmak, görüntülemek ve yazdırmak için uygulama.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/where-is-it.png" alt="Item Tracker" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">وين حطيتها؟ (تتبع الأشياء)</span><span data-lang="tr">Nereye Koydum? (Eşya Takibi)</span></h3>
-        <p><span data-lang="ar">تطبيق لتنظيم وتذكر أماكن الأشياء المهمة (مفاتيح، أوراق، إلكترونيات).</span><span data-lang="tr">Önemli eşyaların yerini hatırlamak için düzenleme uygulaması.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">وين حطيتها؟ (تتبع الأشياء)</span><span data-lang="tr">Nereye Koydum? (Eşya Takibi)</span></h3><p><span data-lang="ar">تطبيق لتنظيم وتذكر أماكن الأشياء المهمة (مفاتيح، أوراق، إلكترونيات).</span><span data-lang="tr">Önemli eşyaların yerini hatırlamak için düzenleme uygulaması.</span></p></div>
     </article>
     <article class="card project">
       <img src="https://raw.githubusercontent.com/moteehdamlakhy86-star/Portfolio/2b2d0dc2abc3f6d8ffb074a564d19b22955d66ea/images/projects/android/sahmak.png" alt="Sahmak" loading="lazy">
-      <div class="project-body">
-        <h3><span data-lang="ar">سهمك (تقسيم المصاريف)</span><span data-lang="tr">Hissen (Gider Bölüşümü)</span></h3>
-        <p><span data-lang="ar">تطبيق مالي عملي لتقسيم الفواتير والمصاريف بين الأصدقاء والمجموعات.</span><span data-lang="tr">Arkadaşlar ve gruplar arasında faturaları bölmek için pratik finans uygulaması.</span></p>
-      </div>
+      <div class="project-body"><h3><span data-lang="ar">سهمك (تقسيم المصاريف)</span><span data-lang="tr">Hissen (Gider Bölüşümü)</span></h3><p><span data-lang="ar">تطبيق مالي عملي لتقسيم الفواتير والمصاريف بين الأصدقاء والمجموعات.</span><span data-lang="tr">Arkadaşlar ve gruplar arasında faturaları bölmek için pratik finans uygulaması.</span></p></div>
     </article>
   </div>
 </section>
 
-<!-- قسم آراء العملاء -->
 <section class="wrap" id="testimonials">
-  <div class="section-head">
-    <h2><span data-lang="ar">ماذا يقول العملاء؟</span><span data-lang="tr">Müşteriler Ne Diyor?</span></h2>
-    <p><span data-lang="ar">آراء وتجارب بعض من تعاملت معهم.</span><span data-lang="tr">Birlikte çalıştığım bazı kişilerin görüşleri.</span></p>
-  </div>
+  <div class="section-head"><h2><span data-lang="ar">ماذا يقول العملاء؟</span><span data-lang="tr">Müşteriler Ne Diyor?</span></h2><p><span data-lang="ar">آراء وتجارب بعض من تعاملت معهم.</span><span data-lang="tr">Birlikte çalıştığım bazı kişilerin görüşleri.</span></p></div>
   <div class="testimonials">
-    <div class="testimonial-card">
-      <div class="quote-icon">"</div>
-      <p class="testimonial-text">
-        <span data-lang="ar">"عمل احترافي وسريع. برنامج FINDIT غيّر طريقة بحثي عن الملفات تماماً. تواصل ممتاز وتسليم في الوقت المحدد."</span>
-        <span data-lang="tr">"Profesyonel ve hızlı iş. FINDIT programı dosya arama şeklimi tamamen değiştirdi. Mükemmel iletişim ve zamanında teslimat."</span>
-      </p>
-      <div class="client-info">
-        <div class="client-avatar">أ</div>
-        <div class="client-details">
-          <h4><span data-lang="ar">أحمد م.</span><span data-lang="tr">Ahmed M.</span></h4>
-          <p><span data-lang="ar">صاحب شركة - سوريا</span><span data-lang="tr">Şirket Sahibi - Suriye</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="quote-icon">"</div>
-      <p class="testimonial-text">
-        <span data-lang="ar">"تعاملت معه في تطوير تطبيق Android TV. فهم المطلوب بسرعة وكانت النتيجة أفضل من المتوقع. أنصح به بشدة."</span>
-        <span data-lang="tr">"Android TV uygulaması geliştirmede onunla çalıştım. Gereksinimleri hızlıca anladı ve sonuç beklediğimden daha iyiydi. Şiddetle tavsiye ederim."</span>
-      </p>
-      <div class="client-info">
-        <div class="client-avatar">س</div>
-        <div class="client-details">
-          <h4><span data-lang="ar">سارة ك.</span><span data-lang="tr">Sara K.</span></h4>
-          <p><span data-lang="ar">مديرة مشاريع - تركيا</span><span data-lang="tr">Proje Yöneticisi - Türkiye</span></p>
-        </div>
-      </div>
-    </div>
-    <div class="testimonial-card">
-      <div class="quote-icon">"</div>
-      <p class="testimonial-text">
-        <span data-lang="ar">"برنامج Windows مع حزمة تثبيت MSI، تم إنجازه باحترافية عالية. الدعم بعد التسليم كان ممتازاً جداً."</span>
-        <span data-lang="tr">"MSI kurulum paketi ile Windows programı, yüksek profesyonellikle tamamlandı. Satış sonrası destek çok mükemmeldi."</span>
-      </p>
-      <div class="client-info">
-        <div class="client-avatar">م</div>
-        <div class="client-details">
-          <h4><span data-lang="ar">محمد ع.</span><span data-lang="tr">Mehmet A.</span></h4>
-          <p><span data-lang="ar">مطور أعمال - الإمارات</span><span data-lang="tr">İş Geliştirici - BAE</span></p>
-        </div>
-      </div>
-    </div>
+    <div class="testimonial-card"><div class="quote-icon">"</div><p class="testimonial-text"><span data-lang="ar">"عمل احترافي وسريع. برنامج FINDIT غيّر طريقة بحثي عن الملفات تماماً. تواصل ممتاز وتسليم في الوقت المحدد."</span><span data-lang="tr">"Profesyonel ve hızlı iş. FINDIT programı dosya arama şeklimi tamamen değiştirdi. Mükemmel iletişim ve zamanında teslimat."</span></p><div class="client-info"><div class="client-avatar">أ</div><div class="client-details"><h4><span data-lang="ar">أحمد م.</span><span data-lang="tr">Ahmed M.</span></h4><p><span data-lang="ar">صاحب شركة - سوريا</span><span data-lang="tr">Şirket Sahibi - Suriye</span></p></div></div></div>
+    <div class="testimonial-card"><div class="quote-icon">"</div><p class="testimonial-text"><span data-lang="ar">"تعاملت معه في تطوير تطبيق Android TV. فهم المطلوب بسرعة وكانت النتيجة أفضل من المتوقع. أنصح به بشدة."</span><span data-lang="tr">"Android TV uygulaması geliştirmede onunla çalıştım. Gereksinimleri hızlıca anladı ve sonuç beklediğimden daha iyiydi. Şiddetle tavsiye ederim."</span></p><div class="client-info"><div class="client-avatar">س</div><div class="client-details"><h4><span data-lang="ar">سارة ك.</span><span data-lang="tr">Sara K.</span></h4><p><span data-lang="ar">مديرة مشاريع - تركيا</span><span data-lang="tr">Proje Yöneticisi - Türkiye</span></p></div></div></div>
+    <div class="testimonial-card"><div class="quote-icon">"</div><p class="testimonial-text"><span data-lang="ar">"برنامج Windows مع حزمة تثبيت MSI، تم إنجازه باحترافية عالية. الدعم بعد التسليم كان ممتازاً جداً."</span><span data-lang="tr">"MSI kurulum paketi ile Windows programı, yüksek profesyonellikle tamamlandı. Satış sonrası destek çok mükemmeldi."</span></p><div class="client-info"><div class="client-avatar">م</div><div class="client-details"><h4><span data-lang="ar">محمد ع.</span><span data-lang="tr">Mehmet A.</span></h4><p><span data-lang="ar">مطور أعمال - الإمارات</span><span data-lang="tr">İş Geliştirici - BAE</span></p></div></div></div>
   </div>
 </section>
 
 <section class="wrap">
   <div class="section-head"><h2><span data-lang="ar">طريقة العمل</span><span data-lang="tr">Çalışma süreci</span></h2></div>
   <div class="steps">
-    <div class="step">
-      <h3><span data-lang="ar">1. فهم الاحتياج</span><span data-lang="tr">1. İhtiyacı anlama</span></h3>
-      <p class="muted"><span data-lang="ar">نناقش الفكرة والوظائف المطلوبة.</span><span data-lang="tr">Fikri ve gerekli özellikleri konuşuruz.</span></p>
-    </div>
-    <div class="step">
-      <h3><span data-lang="ar">2. تحديد النطاق</span><span data-lang="tr">2. Kapsamı belirleme</span></h3>
-      <p class="muted"><span data-lang="ar">نتفق على المخرجات والمدة والتكلفة قبل البدء.</span><span data-lang="tr">Başlamadan önce teslimatları, süreyi ve maliyeti netleştiririz.</span></p>
-    </div>
-    <div class="step">
-      <h3><span data-lang="ar">3. التطوير والتسليم</span><span data-lang="tr">3. Geliştirme ve teslim</span></h3>
-      <p class="muted"><span data-lang="ar">تطوير الحل واختباره وتسليم الملفات المتفق عليها.</span><span data-lang="tr">Çözümü geliştirir, test eder ve kararlaştırılan dosyaları teslim ederim.</span></p>
-    </div>
+    <div class="step"><h3><span data-lang="ar">1. فهم الاحتياج</span><span data-lang="tr">1. İhtiyacı anlama</span></h3><p class="muted"><span data-lang="ar">نناقش الفكرة والوظائف المطلوبة.</span><span data-lang="tr">Fikri ve gerekli özellikleri konuşuruz.</span></p></div>
+    <div class="step"><h3><span data-lang="ar">2. تحديد النطاق</span><span data-lang="tr">2. Kapsamı belirleme</span></h3><p class="muted"><span data-lang="ar">نتفق على المخرجات والمدة والتكلفة قبل البدء.</span><span data-lang="tr">Başlamadan önce teslimatları, süreyi ve maliyeti netleştiririz.</span></p></div>
+    <div class="step"><h3><span data-lang="ar">3. التطوير والتسليم</span><span data-lang="tr">3. Geliştirme ve teslim</span></h3><p class="muted"><span data-lang="ar">تطوير الحل واختباره وتسليم الملفات المتفق عليها.</span><span data-lang="tr">Çözümü geliştirir, test eder ve kararlaştırılan dosyaları teslim ederim.</span></p></div>
   </div>
 </section>
 
@@ -273,119 +156,48 @@
     <div>
       <h2><span data-lang="ar">اطلب خدمتك الآن</span><span data-lang="tr">Hemen Teklif Alın</span></h2>
       <p><span data-lang="ar">أرسل تفاصيل مشروعك وسأرد عليك في أقرب وقت.</span><span data-lang="tr">Projenizin detaylarını gönderin, en kısa sürede size dönüş yapayım.</span></p>
-      
       <form id="contactForm">
         <input type="hidden" name="access_key" value="2fc7f689-31b6-4085-91cd-7a8d8e9010ba">
         <input type="hidden" name="subject" value="طلب مشروع جديد من البورتفوليو">
         <input type="hidden" name="from_name" value="Portfolio Website">
-        
-        <div class="form-group">
-          <label for="name"><span data-lang="ar">الاسم الكريم</span><span data-lang="tr">Adınız</span></label>
-          <!-- تم إضافة data-lang للـ Placeholder -->
-          <input type="text" id="name" name="name" required placeholder="اكتب اسمك هنا..." data-ph-ar="اكتب اسمك هنا..." data-ph-tr="Adınızı buraya yazın...">
-        </div>
-        <div class="form-group">
-          <label for="email"><span data-lang="ar">البريد الإلكتروني</span><span data-lang="tr">E-posta Adresiniz</span></label>
-          <input type="email" id="email" name="email" required placeholder="example@mail.com">
-        </div>
-        <div class="form-group">
-          <label for="message"><span data-lang="ar">تفاصيل المشروع</span><span data-lang="tr">Proje Detayları</span></label>
-          <!-- تم إضافة data-lang للـ Placeholder -->
-          <textarea id="message" name="message" required placeholder="أخبرني عن فكرتك، أو نوع التطبيق الذي تحتاجه..." data-ph-ar="أخبرني عن فكرتك، أو نوع التطبيق الذي تحتاجه..." data-ph-tr="Fikrinizi veya ihtiyacınız olan uygulama türünü anlatın..."></textarea>
-        </div>
-        
-        <button type="submit" class="btn" id="submitBtn">
-          <span data-lang="ar">إرسال الطلب</span><span data-lang="tr">Talebi Gönder</span>
-        </button>
+        <div class="form-group"><label for="name"><span data-lang="ar">الاسم الكريم</span><span data-lang="tr">Adınız</span></label><input type="text" id="name" name="name" required placeholder="اكتب اسمك هنا..." data-ph-ar="اكتب اسمك هنا..." data-ph-tr="Adınızı buraya yazın..."></div>
+        <div class="form-group"><label for="email"><span data-lang="ar">البريد الإلكتروني</span><span data-lang="tr">E-posta Adresiniz</span></label><input type="email" id="email" name="email" required placeholder="example@mail.com"></div>
+        <div class="form-group"><label for="message"><span data-lang="ar">تفاصيل المشروع</span><span data-lang="tr">Proje Detayları</span></label><textarea id="message" name="message" required placeholder="أخبرني عن فكرتك، أو نوع التطبيق الذي تحتاجه..." data-ph-ar="أخبرني عن فكرتك، أو نوع التطبيق الذي تحتاجه..." data-ph-tr="Fikrinizi veya ihtiyacınız olan uygulama türünü anlatın..."></textarea></div>
+        <button type="submit" class="btn" id="submitBtn"><span data-lang="ar">إرسال الطلب</span><span data-lang="tr">Talebi Gönder</span></button>
       </form>
-
-      <div id="successMessage">
-        <span data-lang="ar">✅ شكراً لك! تم إرسال رسالتك بنجاح. سأرد عليك في أقرب وقت.</span>
-        <span data-lang="tr">✅ Teşekkürler! Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağım.</span>
-      </div>
+      <div id="successMessage"><span data-lang="ar">✅ شكراً لك! تم إرسال رسالتك بنجاح. سأرد عليك في أقرب وقت.</span><span data-lang="tr">✅ Teşekkürler! Mesajınız başarıyla gönderildi. En kısa sürede size dönüş yapacağım.</span></div>
     </div>
-
     <div class="contact-info">
       <h3><span data-lang="ar">أو تواصل معي مباشرة:</span><span data-lang="tr">Veya doğrudan iletişime geçin:</span></h3>
-      <a href="https://wa.me/963980306895" target="_blank">
-        <span>📱</span> WhatsApp: 00963980306895
-      </a>
-      <a href="mailto:moteehdamlakhy86@gmail.com">
-        <span>✉️</span> moteehdamlakhy86@gmail.com
-      </a>
-      <div class="tag" style="margin-top:20px; display:inline-block; font-size:14px;">
-        <span data-lang="ar">متاح للتعاون مع العملاء العرب والأتراك</span>
-        <span data-lang="tr">Arap ve Türk müşterilerle işbirliğine açıktır</span>
-      </div>
+      <a href="https://wa.me/963980306895" target="_blank"><span>📱</span> WhatsApp: 00963980306895</a>
+      <a href="mailto:moteehdamlakhy86@gmail.com"><span>✉️</span> moteehdamlakhy86@gmail.com</a>
+      <div class="tag" style="margin-top:20px; display:inline-block; font-size:14px;"><span data-lang="ar">متاح للتعاون مع العملاء العرب والأتراك</span><span data-lang="tr">Arap ve Türk müşterilerle işbirliğine açıktır</span></div>
     </div>
   </div>
 </section>
 </main>
 <footer><div class="wrap"><span data-lang="ar">© 2026 — معرض أعمال تطوير التطبيقات والبرامج. جميع الحقوق محفوظة.</span><span data-lang="tr">© 2026 — Uygulama ve yazılım geliştirme portföyü. Tüm hakları saklıdır.</span></div></footer>
-
 <script>
-  const btn = document.getElementById('langBtn');
-  let lang = 'ar';
-
+  const btn = document.getElementById('langBtn'); let lang = 'ar';
   function switchLanguage(targetLang) {
-    // تبديل النصوص العادية
-    document.querySelectorAll('[data-lang]').forEach(el => {
-      if (el.getAttribute('data-lang') === targetLang) {
-        el.style.display = 'inline';
-      } else {
-        el.style.display = 'none';
-      }
-    });
-
-    // تبديل النص الإرشادي داخل الحقول (Placeholders)
-    document.querySelectorAll('[data-ph-ar]').forEach(el => {
-      if (targetLang === 'ar') {
-        el.setAttribute('placeholder', el.getAttribute('data-ph-ar'));
-      } else {
-        el.setAttribute('placeholder', el.getAttribute('data-ph-tr'));
-      }
-    });
+    document.querySelectorAll('[data-lang]').forEach(el => { if (el.getAttribute('data-lang') === targetLang) { el.style.display = 'inline'; } else { el.style.display = 'none'; } });
+    document.querySelectorAll('[data-ph-ar]').forEach(el => { if (targetLang === 'ar') { el.setAttribute('placeholder', el.getAttribute('data-ph-ar')); } else { el.setAttribute('placeholder', el.getAttribute('data-ph-tr')); } });
   }
-
   switchLanguage('ar');
   btn.addEventListener('click', () => {
     lang = lang === 'ar' ? 'tr' : 'ar';
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.body.classList.toggle('ltr', lang === 'tr');
-    switchLanguage(lang);
+    document.documentElement.lang = lang; document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    document.body.classList.toggle('ltr', lang === 'tr'); switchLanguage(lang);
     btn.textContent = lang === 'ar' ? 'Türkçe' : 'العربية';
   });
-
-  const form = document.getElementById('contactForm');
-  const successMessage = document.getElementById('successMessage');
-  const submitBtn = document.getElementById('submitBtn');
-
+  const form = document.getElementById('contactForm'); const successMessage = document.getElementById('successMessage'); const submitBtn = document.getElementById('submitBtn');
   form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    submitBtn.textContent = 'جاري الإرسال...';
-    submitBtn.disabled = true;
+    e.preventDefault(); submitBtn.textContent = 'جاري الإرسال...'; submitBtn.disabled = true;
     const formData = new FormData(form);
-    fetch('https://api.web3forms.com/submit', {
-      method: 'POST',
-      body: formData
-    })
+    fetch('https://api.web3forms.com/submit', { method: 'POST', body: formData })
     .then(response => response.json())
-    .then(data => {
-      if (data.success) {
-        form.style.display = 'none';
-        successMessage.style.display = 'block';
-      } else {
-        alert('حدث خطأ، يرجى المحاولة مرة أخرى.');
-        submitBtn.textContent = 'إرسال الطلب';
-        submitBtn.disabled = false;
-      }
-    })
-    .catch(error => {
-      alert('حدث خطأ في الاتصال، يرجى المحاولة مرة أخرى.');
-      submitBtn.textContent = 'إرسال الطلب';
-      submitBtn.disabled = false;
-    });
+    .then(data => { if (data.success) { form.style.display = 'none'; successMessage.style.display = 'block'; } else { alert('حدث خطأ، يرجى المحاولة مرة أخرى.'); submitBtn.textContent = 'إرسال الطلب'; submitBtn.disabled = false; } })
+    .catch(error => { alert('حدث خطأ في الاتصال، يرجى المحاولة مرة أخرى.'); submitBtn.textContent = 'إرسال الطلب'; submitBtn.disabled = false; });
   });
 </script>
 </body>
